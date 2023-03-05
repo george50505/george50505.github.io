@@ -1,0 +1,83 @@
+/** last updated 2/3/23 00:45 **/
+
+body {
+	overflow: clip;
+}	
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}	
+
+a:link {
+	color: rgb(26, 26, 26);
+	text-decoration: none;
+	
+	/** animation **/
+	animation-name: aLinkFade;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}	
+
+a:visited {
+	color: rgb(26, 26, 26);
+	text-decoration: none;
+	
+	/** animation **/
+	animation-name: aVisitedFade;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}	
+
+.socialLinks {
+	/** text **/
+	font-family: 'Murecho', sans-serif;
+	font-size: 30px;
+	
+	/** size **/
+	width: 250px;
+	padding: 10px;
+
+	/** position**/
+	margin-left: 55%;
+	margin-top: 25%;
+	top: 10%;
+	position: relative;
+		
+	/** animation settings for #socialLinks **/
+	animation-name: BorderAnim;
+	animation-duration: 0.005s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}		
+
+#background {
+	background-color: white;
+	
+	/** animation settings for #background **/
+	animation-name: backgroundFade;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}	
+
+/** animation keyframes **/
+
+@keyframes backgroundFade {
+	0% {background-color: rgb(217, 217, 217)}
+	100% {background-color: rgb(26, 26, 26)}
+}	
+
+@keyframes aVistedFade {
+	0% {color: rgb(26, 26, 26)}
+	100% {color: rgb(217, 217, 217)}
+}	
+
+@keyframes aLinkFade {
+	0% {color: rgb(26, 26, 26)}
+	100% {color: rgb(217, 217, 217)}
+}	
